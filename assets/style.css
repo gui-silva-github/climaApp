@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Popins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilizando o fundo do documento */
+
+body{
+    background-image: url(/images/fundo.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilizando o card */
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: white;
+    margin: 25px auto 0;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px black;
+    text-shadow: 2px 2px 2px black;
+    padding: 25px 30px;
+    text-align: center;
+}
+
+/* Estilizando a busca que leva a API */
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilizando o input */
+
+.search input{
+    text-align: center;
+    box-shadow: 3px 3px 3px black;
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+/* Estilizando o botão que é uma imagem */
+
+.search button{
+    box-shadow: 3px 3px 3px black;
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+}
+
+/* Estilizando a imagem em si */
+
+.search button img{
+    width: 25px;
+}
+
+/* Estilizando o ícone do clima */
+
+.weather-icon{
+    width: 200px;
+}
+
+/* Estilizando a temperatura a ser mostrada */
+
+.weather h1{
+    margin-top: 4px;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+/* Estilizando a cidade a ser mostrada */
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+}
+
+/* Estilizando os detalhes do clima */
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 40px;
+}
+
+/* Estilizando os parâmetros em si do clima */
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilizando as imagens */
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* Estilizando os conteúdos dos parâmetros do clima */
+
+.humidity, .wind, .min, .max, .country, .coord{
+    font-size: 20px;
+    margin-top: -9px;
+}
+
+/* Não mostrando o weather de início, pois ainda não se tem a cidade */
+
+.weather{
+    display: none;
+}
+
+/* Mensagem de erro */
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Estilizando o way (maneira) do weather */
+
+.way{
+    margin-top: -30px;
+    text-align: center;
+    font-size: 22px;
+    display: none;
+}
+
+/* Estilizando os parágrafos */
+
+p{
+    margin: 3px;
+}
