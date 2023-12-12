@@ -61,32 +61,32 @@ async function checkWeather(city){
 
         if (data.weather[0].main == 'Clouds'){
 
-            weatherIcon.src = '/images/clouds.png';
+            weatherIcon.src = './images/clouds.png';
             document.querySelector('.way').innerHTML = 'Nublado';
 
         } else if (data.weather[0].main == 'Clear'){
 
-            weatherIcon.src = '/images/clear.png';
+            weatherIcon.src = './images/clear.png';
             document.querySelector('.way').innerHTML = 'Claro';
 
         } else if (data.weather[0].main == 'Rain'){
 
-            weatherIcon.src = '/images/rain.png';
+            weatherIcon.src = './images/rain.png';
             document.querySelector('.way').innerHTML = 'Chuva';
 
         } else if (data.weather[0].main == 'Drizzle'){
 
-            weatherIcon.src = '/images/drizzle.png';
+            weatherIcon.src = './images/drizzle.png';
             document.querySelector('.way').innerHTML = 'Garoa';
 
         } else if (data.weather[0].main == 'Mist'){
 
-            weatherIcon.src = '/images/mist.png';
+            weatherIcon.src = './images/mist.png';
             document.querySelector('.way').innerHTML = 'Névoa';
             
         } else if (data.weather[0].main == 'Snow'){
 
-            weatherIcon.src = '/images/snow.png';
+            weatherIcon.src = './images/snow.png';
             document.querySelector('.way').innerHTML = 'Neve';
             
         }

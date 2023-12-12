@@ -8,7 +8,7 @@
 /* Estilizando o fundo do documento */
 
 body{
-    background-image: url(/images/fundo.jpg);
+    background-image: url(../images/fundo.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
