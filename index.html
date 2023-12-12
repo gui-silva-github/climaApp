@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo de Clima</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    
+    <!-- Div que irá conter o cartão (card) do clima -->
+
+    <div class="card">
+
+        <!-- Div da busca na API pela cidade desejada -->
+
+        <div class="search">
+
+            <input type="text" placeholder="Digite o nome da cidade">
+            <button><img src="images/search.png"></button>
+
+        </div>
+
+        <!-- Div apresentada caso a cidade seja inválida -->
+
+        <div class="error">
+
+            <p>Cidade Inválida</p>
+
+        </div>
+
+        <!-- Div que irá mostrar no "card", os dados da cidade desejada -->
+
+        <div class="weather">
+
+            <!-- Imagem sem src, porque vai ser inserido junto a pesquisa na API -->
+
+            <img src="" class="weather-icon">
+
+            <p class="way"></p>
+
+            <!-- Mostando a temperatura da cidade desejada -->
+
+            <h1 class="temp">
+
+            </h1>
+
+            <!-- Mostrando o nome da cidade -->
+
+            <h2 class="city">
+                
+            </h2>
+
+            <!-- Div para mostrar os detalhes, além do nome da cidade e a temperatura -->
+
+            <div class="details">
+
+                <!-- Cada "col" representa um parâmetro, como umidade, ventos, e afins -->
+
+                <div class="col">
+
+                    <img src="images/humidity.png">
+
+                    <!-- Div para mostrar os valores -->
+
+                    <div>
+
+                        <p class="humidity">
+
+
+
+                        </p>
+    
+                        <p>Umidade</p>    
+
+                    </div>
+                   
+                </div>
+
+                <div class="col">
+
+                    <img src="images/wind.png">
+
+                    <!-- Div para mostrar os valores -->
+
+                    <div>
+
+                        <p class="wind">
+
+
+
+                        </p>
+    
+                        <p>Ventos</p>    
+
+                    </div>
+                   
+                </div>
+
+            </div>
+
+            <div class="details">
+
+                <div class="col">
+
+                    <!-- Div para mostrar os valores -->
+
+                    <div>
+
+                        <p class="max">
+
+
+
+                        </p>
+    
+                        <p>Máxima</p>    
+
+                    </div>
+                   
+                </div>
+
+                <div class="col">
+
+                    <!-- Div para mostrar os valores -->
+
+                    <div>
+
+                        <p class="min">
+
+
+
+                        </p>
+    
+                        <p>Mínima</p>    
+
+                    </div>
+                   
+                </div>
+
+            </div>
+
+            <div class="details">
+
+                <div class="col">
+
+                    <!-- Div para mostrar os valores -->
+
+                    <div>
+
+                        <p class="country">
+
+                        </p>
+
+                        <p>
+                            País
+                        </p>
+
+                    </div>
+                   
+                </div>
+
+                <div class="col">
+
+                    <!-- Div para mostrar os valores -->
+
+                    <div>
+
+                        <p class="coord">
+
+
+
+                        </p>
+    
+                        <p>Coordenadas</p>    
+
+                    </div>
+                   
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/assets/main.js"></script>
+
+</body>
+</html>
